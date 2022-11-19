@@ -2,18 +2,37 @@
 
 <PageTitle>Queue</PageTitle>
 
+<style>
+    menu > * > * > *,
+    .menu > * > * > * {
+        display: none;
+    }
+
+    menu > *:hover > * > *,
+    .menu > *:hover > * > * {
+        display: unset;
+    }
+
+    menu, .menu {
+        display: flex;
+        list-style: none;
+    }
+</style>
+
 <h1>🗄️Queue</h1>
 
 
 
 <menu>
     <li>
-        <button>Add Media</button>
+        <button>➕Add Media</button>
         <menu>
             <li>
-                <button>From Web</button>
+                <button>🌐From Web</button>
             </li>
         </menu>
     </li>
-    
+    <li>
+        <button>❌Clear</button>
+    </li>
 </menu>

@@ -869,11 +869,11 @@
       "url": "_framework\/icudt_no_CJK.dat"
     },
     {
-      "hash": "sha256-QyzsFUx3gYKScKbOQwGiuycl27C\/del9ZtvcV9B1zwE=",
+      "hash": "sha256-aXd8iHAB0etc5j1YyFnPwLii8Sr2DDhe\/dpfcWPfRKo=",
       "url": "_framework\/Media Player.dll"
     },
     {
-      "hash": "sha256-vYm0OmDuvtuxcvvB\/MgbHtsIDpfCPlB3mDiYqU3yaSU=",
+      "hash": "sha256-Q+GQ7kVn\/qGNAY4jOqzW8hrkT\/houNQGNx+YUR8lJss=",
       "url": "_framework\/Media Player.pdb"
     },
     {
@@ -881,9 +881,9 @@
       "url": "_framework\/blazor.webassembly.js"
     },
     {
-      "hash": "sha256-EzySe2xdd3d8dFAZa5v87XMONDQj2ElB1eFS2WU0StA=",
+      "hash": "sha256-u4j\/CZAcF\/A79p6ykpDgFsH82fkJ3npGewlqWzZazLo=",
       "url": "_framework\/blazor.boot.json"
     }
   ],
-  "version": "ApkbuESc"
+  "version": "apjF8Q3F"
 };

@@ -34,7 +34,10 @@
         <button class="menu_button">➕Add Media</button>
         <menu>
             <li>
-                <button class="menu_button" onclick="AddMenu_Web">🌐From Web</button>
+                <button class="menu_button" onclick="AddMenu_Web">
+                    🌐From Web
+                    <input type="text" @bind="@AddMenu_Web_URL" />
+                </button>
             </li>
         </menu>
     </li>
@@ -42,20 +45,16 @@
         <button class="menu_button">❌Clear</button>
     </li>
 </menu>
-@if (AddMenu_Web_URL_Dialogue_Show)
-{
-    <p>abc</p>
-}
 
 
 @code {
-    bool AddMenu_Web_URL_Dialogue_Show = false;
+    string AddMenu_Web_URL;
 
-    List<List<string>> queuelist;
+    List<string> QueueList;
 
     void AddMenu_Web()
     {
-        AddMenu_Web_URL_Dialogue_Show = true;
-        this.StateHasChanged();
+        QueueList.Add(AddMenu_Web_URL);
+        AddMenu_Web_URL = QueueList;
     }
 }

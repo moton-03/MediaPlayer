@@ -198,13 +198,13 @@
       "mscorlib.dll": "sha256-pO\/W4w\/X+UjVMUMaxE5tYTQ0tILP+hmMu0zi0MSVBLc=",
       "netstandard.dll": "sha256-kj5cBXzwPYC+HD+P8+6VybY34JtEzjXjMIHXEI3hIiM=",
       "System.Private.CoreLib.dll": "sha256-Awk1lCiFfH7r9AAZfBtGqS8rhv6UJ5lUu3yF6HDH3tQ=",
-      "Media Player.dll": "sha256-vXM3nD\/XFRcRytRXshJeCMikBDYsy6fmv7OFM2iDMN8="
+      "Media Player.dll": "sha256-FMFaSioH7NkIVBQhr\/EgCcR5AmkPD3N1shjewGMA0U8="
     },
     "extensions": null,
     "lazyAssembly": null,
     "libraryInitializers": null,
     "pdb": {
-      "Media Player.pdb": "sha256-DWlCD6DFDfg1oio+oevKi15z+8ouUDAOP2aVP1f8QJA="
+      "Media Player.pdb": "sha256-z0M6v2te0WMAGw7kGg54r1ii\/ROx088\/CrggnQZTQxY="
     },
     "runtime": {
       "dotnet.7.0.0.zv5jgf7nj8.js": "sha256-2jNLve8W0sST0LAebgAc1IwSnGhkbjOKO8QPWWiJssI=",

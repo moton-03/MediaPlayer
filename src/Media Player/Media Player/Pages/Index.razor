@@ -23,38 +23,65 @@
         color: white;
         border: none;
     }
+
 </style>
 
 <h1>🗄️Queue</h1>
 
-
-
-<menu>
+<menu class="menu_top">
     <li>
-        <button class="menu_button">➕Add Media</button>
+        <button class="menu_button">🗄️Queue</button>
         <menu>
             <li>
-                <button class="menu_button" onclick="AddMenu_Web">
-                    🌐From Web
-                    <input type="text" @bind="@AddMenu_Web_URL" />
-                </button>
+                <button class="menu_button">➕Add Media</button>
+                <menu>
+                    <li>
+                        <button class="menu_button" @onclick="AddMenu_Web">
+                            🌐From Web
+                            <br />
+                            <p>
+                                URL:<input type="text" @bind="@AddMenu_Web_URL" />
+                            </p>
+                        </button>
+                    </li>
+                </menu>
+            </li>
+            <li>
+                <button class="menu_button" @onclick="ClearMenu">❌Clear</button>
             </li>
         </menu>
     </li>
     <li>
-        <button class="menu_button">❌Clear</button>
+        <button class="menu_button">📽️Play</button>
     </li>
 </menu>
+
+<div>
+    <div>
+        <ul>
+            <li>
+                @Queue
+            </li>
+        </ul>
+    </div>
+    <div>
+        <iframe src="@Queue">
+
+        </iframe>
+    </div>
+</div>
 
 
 @code {
     string AddMenu_Web_URL;
-
-    List<string> QueueList;
+    string Queue;
 
     void AddMenu_Web()
     {
-        QueueList.Add(AddMenu_Web_URL);
-        AddMenu_Web_URL = QueueList;
+        Queue = AddMenu_Web_URL;
+    }
+    void ClearMenu()
+    {
+        Queue = "";
     }
 }

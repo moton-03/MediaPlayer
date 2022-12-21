@@ -5,7 +5,7 @@
       "url": "css\/app.css"
     },
     {
-      "hash": "sha256-z8OR40MowJ8GgK6P89Y+hiJK5+cclzFHzLhFQLL92bg=",
+      "hash": "sha256-SiIVMGgRhdXjKSTIddX7mh9IbOXVcwQWc7\/p4nS6D\/0=",
       "url": "css\/bootstrap\/bootstrap.min.css"
     },
     {
@@ -842,7 +842,7 @@
     },
     {
       "hash": "sha256-2jNLve8W0sST0LAebgAc1IwSnGhkbjOKO8QPWWiJssI=",
-      "url": "_framework\/dotnet.7.0.0.zv5jgf7nj8.js"
+      "url": "_framework\/dotnet.7.0.0.ts3x2wmfjl.js"
     },
     {
       "hash": "sha256-NFPG+mWpX1lpilZGC5d9W\/8+Yjx+6oW2ujo2u+HYW1Q=",
@@ -869,11 +869,11 @@
       "url": "_framework\/icudt_no_CJK.dat"
     },
     {
-      "hash": "sha256-AU0iihMfzyjgVXiFOuWlR7WzxGvoDymaq\/a9Uz6SvPg=",
+      "hash": "sha256-1Y8cNH4oQPohTI607kAfV1Dvb2xgLklHE2rvpZnGKHw=",
       "url": "_framework\/Media Player.dll"
     },
     {
-      "hash": "sha256-pKsD\/30kTKfL\/Psd9h+FsG1mr2UreDg41DFF81l+5W8=",
+      "hash": "sha256-2cdFX2DXF9tTrn0Fc9f+znxuSUEqoCrsazfd9SwrXlk=",
       "url": "_framework\/Media Player.pdb"
     },
     {
@@ -881,9 +881,9 @@
       "url": "_framework\/blazor.webassembly.js"
     },
     {
-      "hash": "sha256-BVmdPSYEBjafatjBN33le59GPNnxRWmNEZHbpyk5IHc=",
+      "hash": "sha256-j6h0u22S21NJmEDTVUlpPsnfUTnOOAiocD\/VT1eRPCA=",
       "url": "_framework\/blazor.boot.json"
     }
   ],
-  "version": "fGik1mZk"
+  "version": "xP5f04z\/"
 };

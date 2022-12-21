@@ -1,6 +1,6 @@
 ﻿@page "/"
 
-<PageTitle>Queue</PageTitle>
+<PageTitle>MediaPlayer</PageTitle>
 
 <style>
     menu > * > * > *,
@@ -26,38 +26,38 @@
 
 </style>
 
-<h1>🗄️Queue</h1>
+<h1>MediaPlayer</h1>
 
 <menu class="menu_top">
     <li>
-        <button class="menu_button">🗃️File</button>
+        <button class="menu_button">File</button>
         <menu>
             <li>
-                <button class="menu_button" @onclick="NewMenu">📄New</button>
+                <button class="menu_button" @onclick="NewMenu">New</button>
             </li>
             <li>
-                <button class="menu_button">📂Open</button>
+                <button class="menu_button">Open</button>
                 <menu>
                     <li>
                         <button class="menu_button" @onclick="OpenMenu_Text">
-                            📖From Text
+                            From Text
                             <br />
                             <p>
-                                Text: <input type="text" @bind="@OpenMenu_Text_Text" />
+                                Text: <input type="text" @bind="@openMenuTextText" />
                             </p>
                         </button>
                     </li>
                 </menu>
             </li>
             <li>
-                <button class="menu_button">💾Save</button>
+                <button class="menu_button">Save</button>
                 <menu>
                     <li>
                         <button class="menu_button" @onclick="SaveMenu_Text">
-                            📖From Text
+                            From Text
                             <br />
                             <p>
-                                Text: <input type="text" @bind="@SaveMenu_Text_Text" />
+                                Text: <input type="text" @bind="@saveMenuTextText" />
                             </p>
                         </button>
                     </li>
@@ -66,29 +66,29 @@
         </menu>
     </li>
     <li>
-        <button class="menu_button">🗄️Queue</button>
+        <button class="menu_button">Queue</button>
         <menu>
             <li>
-                <button class="menu_button">➕Add Media</button>
+                <button class="menu_button">Add Media</button>
                 <menu>
                     <li>
                         <button class="menu_button" @onclick="AddMenu_Web">
-                            🌐From Web
+                            From Web
                             <br />
                             <p>
-                                URL: <input type="text" @bind="@AddMenu_Web_URL" />
+                                URL: <input type="text" @bind="@addMenuWebURL" />
                             </p>
                         </button>
                     </li>
                 </menu>
             </li>
             <li>
-                <button class="menu_button" @onclick="ClearMenu">🗑️Clear</button>
+                <button class="menu_button" @onclick="ClearMenu">Clear</button>
             </li>
         </menu>
     </li>
     <li>
-        <button class="menu_button" @onclick="PlayMenu">▶️Play</button>
+        <button class="menu_button" @onclick="PlayMenu">Play</button>
     </li>
 </menu>
 <div>
@@ -104,15 +104,15 @@
 <iframe src="@Queue_URL"></iframe>
 
 @code {
-    string OpenMenu_Text_Text;
-    string SaveMenu_Text_Text;
-    string AddMenu_Web_URL;
+    string openMenuTextText;
+    string saveMenuTextText;
+    string addMenuWebURL;
     string Queue = "about:blank";
     string Queue_URL = "about:blank";
 
     void AddMenu_Web()
     {
-        Queue = AddMenu_Web_URL;
+        Queue = addMenuWebURL;
     }
     void ClearMenu()
     {
@@ -128,11 +128,11 @@
     }
     void OpenMenu_Text()
     {
-        Queue = m3u_Decompilation(OpenMenu_Text_Text);
+        Queue = m3u_Decompilation(openMenuTextText);
     }
     void SaveMenu_Text()
     {
-        SaveMenu_Text_Text = m3u_Compilation(Queue);
+        saveMenuTextText = m3u_Compilation(Queue);
     }
     string m3u_Compilation(string m3uText)
     {
